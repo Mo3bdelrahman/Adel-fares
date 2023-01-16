@@ -1,0 +1,22 @@
+:root {
+  --maincolor: #e2979d;
+  --lgtcolor: #fff3ea;
+  --darkcolor: #141414;
+}
+.main * {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  background-image: url(../../assets/imgs/cover.png);
+  color: #fff;
+  height: auto;
+  text-align: center;
+  font-size: 9vh;
+}
+.rows {
+  height: 100vh;
+}
+.main h1 {
+  font-size: 100%;
+}

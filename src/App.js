@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Layout from "./components/layout/layout";
+import Auxiliary from "./hoc/auxiliary";
+import Countdown from "./components/countdown/countdown";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    let showlayout = "";
+    if (true) {
+      showlayout = <Countdown />;
+    } else {
+      showlayout = <Layout />;
+    }
+
+    return <Auxiliary>{showlayout}</Auxiliary>;
+  }
 }
-
 export default App;
